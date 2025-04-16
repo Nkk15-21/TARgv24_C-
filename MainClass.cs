@@ -21,6 +21,7 @@ namespace TARgv24_C
 
             Console.WriteLine("---------------------------------");
 
+            //-----------------------------------------------------------------
 
             isik isik1 = new isik("Juku", 65, "12345678987", "Tallinn");
             isik1.PrindiInfo();
@@ -31,7 +32,7 @@ namespace TARgv24_C
             isik2.Sugu = Sugu.Naine;
             isik2.PrindiInfo();
 
-
+            //--------------------------------------------------------------------
 
             int i;
             string[] nimed = new string[10] { "a", "b", "c", "d", "e", "f", "g", "h", "j", "k" };
@@ -44,6 +45,7 @@ namespace TARgv24_C
                 isikud[i].PrindiInfo();
             }
 
+            //-------------------------------------------------------------------------
 
             Console.WriteLine("----------for--List-------");
             List<isik> isikud2 = new List<isik>();
@@ -63,6 +65,8 @@ namespace TARgv24_C
             {
                 isik.PrindiInfo();
             }
+
+
 
             Console.WriteLine("------while------");
             while (i>=0)
