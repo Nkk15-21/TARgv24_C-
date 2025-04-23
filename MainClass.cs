@@ -11,44 +11,56 @@ namespace TARgv24_C
         public static void Main(string[] args)
         {
 
-            //Доподнительнро задание
 
-            //9-1
-            Console.WriteLine("Ruutude arvutamine (for):");
-            List<int> ruudud = FunctionClass_2osa.ArvudeRuudud();
-            foreach (var r in ruudud)
-                Console.WriteLine(r);
+            //IV. osa
 
-            //9-2
-            Console.WriteLine("\nKahekordsed väärtused (foreach):");
-            List<int> topelt = FunctionClass_2osa.Kahekordsed();
-            foreach (var t in topelt)
-                Console.WriteLine(t);
+            //14 — Faili kirjutamine
 
-            //9-3
-            Console.WriteLine("\nKolmega jaguvad arvud (while):");
-            int jaguvateArv = FunctionClass_2osa.KolmegaJaguvad();
-            Console.WriteLine($"Kokku: {jaguvateArv}");
+            Console.WriteLine("\n--- Faili töö kuudega ---");
+            FunctionClass_2osa.FailiTooKuudega();
 
 
-            //10
-            Console.WriteLine("\nPositiivsed, negatiivsed ja nullid (foreach):");
-            FunctionClass_2osa.PosNegNull();
 
 
-            //11
-            Console.WriteLine("\n--- Keskmisest suuremad ja do-while osa ---");
-            FunctionClass_2osa.KeskmisestSuuremad();
+
+            ////Доподнительнро задание
+
+            ////9-1
+            //Console.WriteLine("Ruutude arvutamine (for):");
+            //List<int> ruudud = FunctionClass_2osa.ArvudeRuudud();
+            //foreach (var r in ruudud)
+            //    Console.WriteLine(r);
+
+            ////9-2
+            //Console.WriteLine("\nKahekordsed väärtused (foreach):");
+            //List<int> topelt = FunctionClass_2osa.Kahekordsed();
+            //foreach (var t in topelt)
+            //    Console.WriteLine(t);
+
+            ////9-3
+            //Console.WriteLine("\nKolmega jaguvad arvud (while):");
+            //int jaguvateArv = FunctionClass_2osa.KolmegaJaguvad();
+            //Console.WriteLine($"Kokku: {jaguvateArv}");
 
 
-            //12
-            Console.WriteLine("\n--- Suurima arvu ja indeksi leidmine (for) ---");
-            FunctionClass_2osa.LeiaSuurimArvJaIndeks();
+            ////10
+            //Console.WriteLine("\nPositiivsed, negatiivsed ja nullid (foreach):");
+            //FunctionClass_2osa.PosNegNull();
 
 
-            //13
-            Console.WriteLine("\n--- Paaris ja paaritu loendus (List, foreach) ---");
-            FunctionClass_2osa.PaarisJaPaaritu();
+            ////11
+            //Console.WriteLine("\n--- Keskmisest suuremad ja do-while osa ---");
+            //FunctionClass_2osa.KeskmisestSuuremad();
+
+
+            ////12
+            //Console.WriteLine("\n--- Suurima arvu ja indeksi leidmine (for) ---");
+            //FunctionClass_2osa.LeiaSuurimArvJaIndeks();
+
+
+            ////13
+            //Console.WriteLine("\n--- Paaris ja paaritu loendus (List, foreach) ---");
+            //FunctionClass_2osa.PaarisJaPaaritu();
 
 
 

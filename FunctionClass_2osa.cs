@@ -218,6 +218,63 @@ namespace TARgv24_C
         }
 
 
+        // ------------------------------- 4.osa ----------------------------------
+
+        public static void FailiTooKuudega()
+        {
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Kuud.txt");
+
+            // 1. Записываем 3 месяца
+            if (!File.Exists(path))
+            {
+                File.WriteAllLines(path, new string[] { "Mai", "Juuni", "Juuli" });
+                Console.WriteLine("Esimesed kuud kirjutatud faili.");
+            }
+
+            // 2. Читаем файл в список
+            List<string> kuude_list = new List<string>();
+            try
+            {
+                foreach (string rida in File.ReadAllLines(path))
+                {
+                    kuude_list.Add(rida);
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Viga failiga!");
+                return;
+            }
+
+            // 3. Удаляем "Juuni"
+            kuude_list.Remove("Juuni");
+
+            // 4. Меняем 1-й элемент
+            if (kuude_list.Count > 0)
+                kuude_list[0] = "Veeel kuuu";
+
+            // 5. Печатаем всё
+            Console.WriteLine("--------------Kuud peale muutmist-----------");
+            foreach (string kuu in kuude_list)
+            {
+                Console.WriteLine(kuu);
+            }
+
+            // 6. Поиск
+            Console.WriteLine("Sisesta kuu nimi, mida otsida:");
+            string otsitav = Console.ReadLine();
+
+            if (kuude_list.Contains(otsitav))
+                Console.WriteLine("Kuu " + otsitav + " on olemas.");
+            else
+                Console.WriteLine("Sellist kuud pole.");
+
+            // 7. Сохраняем изменения обратно
+            File.WriteAllLines(path, kuude_list);
+            Console.WriteLine("Andmed on salvestatud.");
+        }
+    
+
 
 
 
