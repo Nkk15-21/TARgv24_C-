@@ -11,7 +11,7 @@ namespace TARgv24_C
         public static void Main(string[] args)
         {
 
-            //Доп задание
+            //Доподнительнро задание
 
             //9-1
             Console.WriteLine("Ruutude arvutamine (for):");
