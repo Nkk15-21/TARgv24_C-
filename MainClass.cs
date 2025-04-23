@@ -11,7 +11,7 @@ namespace TARgv24_C
         public static void Main(string[] args)
         {
 
-            //9 задание
+            //Доп задание
 
             //9-1
             Console.WriteLine("Ruutude arvutamine (for):");
@@ -30,6 +30,25 @@ namespace TARgv24_C
             int jaguvateArv = FunctionClass_2osa.KolmegaJaguvad();
             Console.WriteLine($"Kokku: {jaguvateArv}");
 
+
+            //10
+            Console.WriteLine("\nPositiivsed, negatiivsed ja nullid (foreach):");
+            FunctionClass_2osa.PosNegNull();
+
+
+            //11
+            Console.WriteLine("\n--- Keskmisest suuremad ja do-while osa ---");
+            FunctionClass_2osa.KeskmisestSuuremad();
+
+
+            //12
+            Console.WriteLine("\n--- Suurima arvu ja indeksi leidmine (for) ---");
+            FunctionClass_2osa.LeiaSuurimArvJaIndeks();
+
+
+            //13
+            Console.WriteLine("\n--- Paaris ja paaritu loendus (List, foreach) ---");
+            FunctionClass_2osa.PaarisJaPaaritu();
 
 
 
